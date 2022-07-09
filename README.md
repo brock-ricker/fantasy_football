@@ -47,7 +47,7 @@ It is possible to further break down player starts, by looking at the points sco
 
 ![image](https://user-images.githubusercontent.com/99829862/178121824-f0cfa86f-026c-4835-a53b-61279f1f64ad.png)
 
-The reason we look at scores from starts only, is that we are interested in where a specific score will tank a player compared to other starters, not bench players, or injured players. 
+The reason we look at scores from starts only, is that we are interested in where a specific score will rank a player compared to other starters. Outscoring bench players or injured players does not tell us much about a players performance.
 
 The vertical green line is the 50th percentile (median) of starts. Any score over this threshold can be considered a good score, if a player reaches this score, there is a good chance they will be in the top 1/2 of starter scores for that week. The red line is the 90th percentile, this is an elite score, if a player reaches this score, there is a good chance they will be in the top 10% of starter scores for that week. In QBs, for example, this would be a top 2 performance.
 
