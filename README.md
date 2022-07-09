@@ -85,7 +85,7 @@ In order to choose the best lineup each week, we first need to better predict a 
   * player projections from myFantasy website
 * Target: player scores
 
-Using these conditions, I generated two similar models, one useing sqaured error as the loss function, and one using absolute error. I think in later implemenations of these models, there might be cases where one is preferable over the other.
+Using these conditions, I generated two similar models, one useing sqaured error as the loss function, and one using absolute error. I think in later implemenations of these models, there might be cases where one is preferable over the other. These are the accuracy scores using the test set of data:
 
 | Model | R2 | MAE | MSE | RMSE |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
@@ -93,5 +93,13 @@ Using these conditions, I generated two similar models, one useing sqaured error
 | GBR_MAE | 0.4682 | 4.45 | 36.48 | 6.04 |
 
 
-Model Evaluation
+Player Score Model Evaluation
 ---
+
+When it comes to predicting player score, not all errors are created equal. If a player out scores a prediciton it is a happy surprise, if the player under-scores a prediction its a sad result. By comparing predicted scores vs. actual scores on the test set of data (by position) I get the following:
+
+![image](https://user-images.githubusercontent.com/99829862/178125441-99bcbccf-5899-4937-986a-2bf82ecc7580.png)
+
+Any score above the red line is one of the happy surprises I mentioned above, and anything below could cost you the game.
+
+
