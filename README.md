@@ -68,5 +68,22 @@ As you can see from the above table, fantasy team owners are missing out, on ave
 Player Score Model
 ---
 
+In order to choose the best lineup each week, we first need to better predict a players score for a given week. This is a regression problem. I attempted multiple models, on various features, but I found the best success with the following conditions:
+
+* Model: Gradient Boosting Regressor
+* Features:
+* * player position
+* * week
+* * day of the week
+* * time of game
+* * NFL spread
+* * predicted score of player's NFL team
+* * average points allowed to player's position from opposing team
+* * player ADP
+* * player score projections from myFantasy website
+* Target: player scores
+
+
+
 Modeling
 ---
