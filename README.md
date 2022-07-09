@@ -1,5 +1,7 @@
 # Fantasy Football
 
+This project is a work in progress and is still being updated regularly as I build more ML models and implement more database feaures.
+
 Summary
 ---
 Collects data from numerous onlines sources; APIs and Web scraping, to analyse Fantasy Football analytics. Using this data, machine learning models are implemented to make predictions about individual player performance and draft pick value.
