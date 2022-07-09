@@ -65,7 +65,7 @@ Each week the fantasy team owners choose which players to start, and which playe
 
 As you can see from the above table, fantasy team owners are missing out, on average 24.3 points. That is more than enough to change the outcome of a matchup.
 
-Player Score Model
+Player Score Modelling
 ---
 
 In order to choose the best lineup each week, we first need to better predict a players score for a given week. This is a regression problem. I attempted multiple models, on various features, but I found the best success with the following conditions:
