@@ -110,7 +110,7 @@ At this point, I think its important to consider the purpose of this model: to d
 
 When viewing the scores vs. predictions this way, we can identify 4 quadrants:
 
-
+![image](https://user-images.githubusercontent.com/99829862/178126052-384006d4-b2fc-4cad-9aad-dd1037709185.png)
 
 
 
