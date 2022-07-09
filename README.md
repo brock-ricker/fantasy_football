@@ -53,7 +53,15 @@ The vertical green line is the 50th percentile (median) of starts. Any score ove
 
 **Team Scores**
 
+Each week the fantasy team owners choose which players to start, and which players to bench. Football is a game with a lot of randomness, and choosing the best possible line-up is rarely done. This is demonstrated clearly by the distribution of weekly team scores vs. possible weekly team scores. Where possible weekly team score is the score if the fantasy team owner had chosen the ideal line-up.
 
+![image](https://user-images.githubusercontent.com/99829862/178123163-149bf757-e347-43cf-92af-ca58fac8b181.png)
+
+| median weekly team score | 114.3 |
+| median possible weekly team score | 140.0 |
+| Avg(score - possible_score) | 24.3 |
+
+As you can see from the above table, fantasy team owners are missing out, on average 24.3 points. That is more than enough to change the outcome of a matchup.
 
 Player Score Model
 ---
