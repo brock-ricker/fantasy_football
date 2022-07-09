@@ -67,7 +67,7 @@ Each week the fantasy team owners choose which players to start, and which playe
 
 As you can see from the above table, fantasy team owners are missing out, on average 24.3 points. That is more than enough to change the outcome of a matchup.
 
-Player Score Modelling
+Player Score Regression Modelling
 ---
 
 In order to choose the best lineup each week, we first need to better predict a players score for a given week. This is a regression problem. I attempted multiple models, on various features, but I found the best success with the following conditions:
@@ -93,13 +93,25 @@ Using these conditions, I generated two similar models, one useing sqaured error
 | GBR_MAE | 0.4682 | 4.45 | 36.48 | 6.04 |
 
 
-Player Score Model Evaluation
+Player Score Regression Model Evaluation
 ---
 
-When it comes to predicting player score, not all errors are created equal. If a player out scores a prediciton it is a happy surprise, if the player under-scores a prediction its a sad result. By comparing predicted scores vs. actual scores on the test set of data (by position) I get the following:
+When it comes to predicting player score, not all errors are created equal. If a player out-scores a prediciton it is a happy surprise, if the player under-scores a prediction its a sad result. By comparing predicted scores vs. actual scores on the test set of data (by position) I get the following:
 
 ![image](https://user-images.githubusercontent.com/99829862/178125441-99bcbccf-5899-4937-986a-2bf82ecc7580.png)
 
-Any score above the red line is one of the happy surprises I mentioned above, and anything below could cost you the game.
+Any score above the red line is one of those happy surprises I mentioned above, and anything below could cost you the game.
+
+** SO... Who Should I Start?!**
+
+At this point, I think its important to consider the purpose of this model: to decide which players to start. The true test of whether or not this model is useful, is its ability to predict a players chance of producing a "good" starting score. Lets explore this using the score threshold defined above: a "good" score is one >= the median score for starters at that position. Lets see what that looks like on our score vs. prediction graphs:
+
+![image](https://user-images.githubusercontent.com/99829862/178125864-e816fddc-9352-4cb9-b981-90dec9aed9e8.png)
+
+When viewing the scores vs. predictions this way, we can identify 4 quadrants:
+
+
+
+
 
 
