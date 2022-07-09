@@ -80,9 +80,15 @@ In order to choose the best lineup each week, we first need to better predict a 
   * predicted score of player's NFL team
   * average points allowed to player's position from opposing team
   * player ADP
-  * player score projections from myFantasy website
+  * player projections from myFantasy website
 * Target: player scores
 
+Using these conditions, I generated two similar models, one useing sqaured error as the loss function, and one using absolute error. I think in later implemenations of these models, there might be cases where one is preferable over the other.
+
+| Model | R2 | MAE | MSE | RMSE |
+| ------------- | ------------- | ------------- | ------------- | ------------- |
+| GBR_RMSE | 0.4464 | 4.25 | 37.97 | 6.16 |
+| GBR_MAE | 0.4682 | 4.45 | 36.48 | 6.04 |
 
 
 Modeling
