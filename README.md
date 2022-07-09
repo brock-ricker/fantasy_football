@@ -2,7 +2,7 @@
 
 Summary
 ---
-Collects data from numerous onlines sources; APIs and Web scraping, to analyse Fantasy Football analytics. Using this data, machine learning models are implemented, to make predictions about individual player performance and draft pick value.
+Collects data from numerous onlines sources; APIs and Web scraping, to analyse Fantasy Football analytics. Using this data, machine learning models are implemented to make predictions about individual player performance and draft pick value.
 
 Data Wrangling
 ---
