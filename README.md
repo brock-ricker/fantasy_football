@@ -57,6 +57,8 @@ Each week the fantasy team owners choose which players to start, and which playe
 
 ![image](https://user-images.githubusercontent.com/99829862/178123163-149bf757-e347-43cf-92af-ca58fac8b181.png)
 
+| Item | Value | 
+| ------------- | ------------- | 
 | median weekly team score | 114.3 |
 | median possible weekly team score | 140.0 |
 | Avg(score - possible_score) | 24.3 |
