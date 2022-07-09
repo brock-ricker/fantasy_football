@@ -72,15 +72,15 @@ In order to choose the best lineup each week, we first need to better predict a 
 
 * Model: Gradient Boosting Regressor
 * Features:
- * player position
- * week
- * day of the week
- * time of game
- * NFL spread
- * predicted score of player's NFL team
- * average points allowed to player's position from opposing team
- * player ADP
- * player score projections from myFantasy website
+  * player position
+  * week
+  * day of the week
+  * time of game
+  * NFL spread
+  * predicted score of player's NFL team
+  * average points allowed to player's position from opposing team
+  * player ADP
+  * player score projections from myFantasy website
 * Target: player scores
 
 
