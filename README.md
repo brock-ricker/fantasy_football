@@ -102,7 +102,7 @@ When it comes to predicting player score, not all errors are created equal. If a
 
 Any score above the red line is one of those happy surprises I mentioned above, and anything below could cost you the game.
 
-** SO... Who Should I Start?!**
+**SO... Who Should I Start?!**
 
 At this point, I think its important to consider the purpose of this model: to decide which players to start. The true test of whether or not this model is useful, is its ability to predict a players chance of producing a "good" starting score. Lets explore this using the score threshold defined above: a "good" score is one >= the median score for starters at that position. Lets see what that looks like on our score vs. prediction graphs:
 
