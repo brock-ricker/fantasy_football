@@ -91,5 +91,5 @@ Using these conditions, I generated two similar models, one useing sqaured error
 | GBR_MAE | 0.4682 | 4.45 | 36.48 | 6.04 |
 
 
-Modeling
+Model Evaluation
 ---
