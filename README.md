@@ -120,6 +120,7 @@ When viewing the scores vs. predictions this way, we can identify 4 quadrants:
 This is starting to look like a classification problem. But before we build another model, lets convert our predicted scores to these binary good_score/bad_score categories, and evaluate.
 
 Model Metrics:
+
 ![image](https://user-images.githubusercontent.com/99829862/178128384-212d2dee-2b30-41ee-a6eb-8a82907c7cc5.png)
 
 While the accuracy is just OK, at 64%. The most notable metric is the recall for the "bad_score" outcome. The model achieved 80%, this means that this model can tell you who NOT to start with 80% accuracy.
