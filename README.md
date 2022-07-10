@@ -104,13 +104,20 @@ Any score above the red line is one of those happy surprises I mentioned above, 
 
 **SO... Who Should I Start?!**
 
-At this point, I think its important to consider the purpose of this model: to decide which players to start. The true test of whether or not this model is useful, is its ability to predict a players chance of producing a "good" starting score. Lets explore this using the score threshold defined above: a "good" score is one >= the median score for starters at that position. Lets see what that looks like on our score vs. prediction graphs:
+At this point, I think its important to consider the purpose of this model: to decide which players to start. The true test of whether or not this model is useful, is its ability to predict a players chance of producing a "good" starting score. Lets explore this using the score threshold defined above: a "good" score is defined as: a score >= the median score for starters at that position. Lets see what that looks like on our score vs. prediction graphs:
 
 ![image](https://user-images.githubusercontent.com/99829862/178125864-e816fddc-9352-4cb9-b981-90dec9aed9e8.png)
 
 When viewing the scores vs. predictions this way, we can identify 4 quadrants:
 
 ![image](https://user-images.githubusercontent.com/99829862/178126052-384006d4-b2fc-4cad-9aad-dd1037709185.png)
+
+* Q1: prediciton = "bad" starting score, result = "good" starting score (false negative)
+* Q2: prediciton = "good" starting score, result = "good" starting score (true positive)
+* Q3: prediciton = "bad" starting score, result = "bad" starting score (true negative)
+* Q4:  prediciton = "good" starting score, result = "bad" starting score (false positive)
+
+This is starting to look like a classification problem. But before we build another model, lets convert our predicted scores to these binary good_score/bad_score categories, and evaluate.
 
 
 
