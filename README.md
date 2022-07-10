@@ -85,7 +85,7 @@ In order to choose the best lineup each week, we first need to better predict a 
   * player projections from myFantasy website
 * Target: player scores
 
-Using these conditions, I generated two similar models, one useing sqaured error as the loss function, and one using absolute error. I think in later implemenations of these models, there might be cases where one is preferable over the other. These are the accuracy scores using the test set of data:
+Using these conditions, I generated two similar models, one using squared error as the loss function, and one using absolute error. I think in later implemenations of these models, there might be cases where one is preferable over the other. To train and evaluate these models, I used a standard 75%/25% train/test split. These are the accuracy scores using the test set of data:
 
 | Model | R2 | MAE | MSE | RMSE |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
