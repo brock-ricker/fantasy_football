@@ -96,7 +96,7 @@ Using these conditions, I generated two similar models, one using squared error 
 Player Score Regression Model Evaluation
 ---
 
-When it comes to predicting player score, not all errors are created equal. If a player out-scores a prediciton it is a happy surprise, if the player under-scores a prediction its a sad result. By comparing predicted scores vs. actual scores on the test set of data (by position) I get the following:
+When it comes to predicting player score, not all errors are created equal. If a player out-scores a prediciton it is a happy surprise, if the player under-scores a prediction it's a sad result. By comparing predicted scores vs. actual scores on the test set of data (by position) I get the following:
 
 ![image](https://user-images.githubusercontent.com/99829862/178125441-99bcbccf-5899-4937-986a-2bf82ecc7580.png)
 
