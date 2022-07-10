@@ -89,8 +89,8 @@ Using these conditions, I generated two similar models, one useing sqaured error
 
 | Model | R2 | MAE | MSE | RMSE |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
-| GBR_RMSE | 0.4464 | 4.25 | 37.97 | 6.16 |
-| GBR_MAE | 0.4682 | 4.45 | 36.48 | 6.04 |
+| GBR_MAE | 0.4464 | 4.25 | 37.97 | 6.16 |
+| GBR_RMSE | 0.4682 | 4.45 | 36.48 | 6.04 |
 
 
 Player Score Regression Model Evaluation
