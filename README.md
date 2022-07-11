@@ -1,10 +1,10 @@
 # Fantasy Football
 
-This project is a work in progress and is still being updated regularly as I build more ML models and implement more database feaures.
+This project is a work in progress and is still being updated regularly as I build more ML models and implement more database features.
 
 Summary
 ---
-Collects data from numerous onlines sources; APIs and Web scraping, to analyse Fantasy Football analytics. Using this data, machine learning models are implemented to make predictions about individual player performance and draft pick value.
+Collects data from numerous online sources; APIs and Web scraping, to analyze Fantasy Football analytics. Using this data, machine learning models are implemented to make predictions about individual player performance and draft pick value.
 
 Data Wrangling
 ---
@@ -45,11 +45,11 @@ From 2017-2021 there have been 6966 player starts; 2519 WRs, 2028 RBs, 1448 QBs,
 
 **Player Scores**
 
-It is possible to further break down player starts, by looking at the points scored, by position for every starter. This will tell us what is a "good" score for a certain position vs. a "bad" one. The folowing is a histogram of scores for every starter by position:
+It is possible to further break down player starts, by looking at the points scored, by position for every starter. This will tell us what is a "good" score for a certain position vs. a "bad" one. The following is a histogram of scores for every starter by position:
 
 ![image](https://user-images.githubusercontent.com/99829862/178121824-f0cfa86f-026c-4835-a53b-61279f1f64ad.png)
 
-The reason we look at scores from starts only, is that we are interested in where a specific score will rank a player compared to other starters. Outscoring bench players or injured players does not tell us much about a players performance.
+The reason we look at scores from starts only, is that we are interested in where a specific score will rank a player compared to other starters. Outscoring bench players or injured players does not tell us much about a player's performance.
 
 The vertical green line is the 50th percentile (median) of starts. Any score over this threshold can be considered a good score, if a player reaches this score, there is a good chance they will be in the top 1/2 of starter scores for that week. The red line is the 90th percentile, this is an elite score, if a player reaches this score, there is a good chance they will be in the top 10% of starter scores for that week. In QBs, for example, this would be a top 2 performance.
 
@@ -85,7 +85,7 @@ In order to choose the best lineup each week, we first need to better predict a 
   * player projections from myFantasy website
 * Target: player scores
 
-Using these conditions, I generated two similar models, one using squared error as the loss function, and one using absolute error. I think in later implemenations of these models, there might be cases where one is preferable over the other. To train and evaluate these models, I used a standard 75%/25% train/test split. These are the accuracy scores using the test set of data:
+Using these conditions, I generated two similar models, one using squared error as the loss function, and one using absolute error. I think in later implementations of these models, there might be cases where one is preferable over the other. To train and evaluate these models, I used a standard 75%/25% train/test split. These are the accuracy scores using the test set of data:
 
 | Model | R2 | MAE | MSE | RMSE |
 | ------------- | ------------- | ------------- | ------------- | ------------- |
@@ -96,7 +96,7 @@ Using these conditions, I generated two similar models, one using squared error 
 Player Score Regression Model Evaluation
 ---
 
-When it comes to predicting player score, not all errors are created equal. If a player out-scores a prediciton it is a happy surprise, if the player under-scores a prediction it's a sad result. By comparing predicted scores vs. actual scores on the test set of data (by position) I get the following:
+When it comes to predicting player score, not all errors are created equal. If a player out-scores a prediction it is a happy surprise, if the player under-scores a prediction it's a sad result. By comparing predicted scores vs. actual scores on the test set of data (by position) I get the following:
 
 ![image](https://user-images.githubusercontent.com/99829862/178125441-99bcbccf-5899-4937-986a-2bf82ecc7580.png)
 
@@ -104,7 +104,7 @@ Any score above the red line is one of those happy surprises I mentioned above, 
 
 **SO... Who Should I Start?!**
 
-At this point, I think its important to consider the purpose of this model: to decide which players to start. The true test of whether or not this model is useful, is its ability to predict a players chance of producing a "good" starting score. Lets explore this using the score threshold defined above: a "good" score is defined as: a score >= the median score for starters at that position. Lets see what that looks like on our score vs. prediction graphs:
+At this point, I think it's important to consider the purpose of this model: to decide which players to start. The true test of whether or not this model is useful, is its ability to predict a player's chance of producing a "good" starting score. Lets explore this using the score threshold defined above: a "good" score is defined as: a score >= the median score for starters at that position. Lets see what that looks like on our score vs. prediction graphs:
 
 ![image](https://user-images.githubusercontent.com/99829862/178125864-e816fddc-9352-4cb9-b981-90dec9aed9e8.png)
 
@@ -112,10 +112,10 @@ When viewing the scores vs. predictions this way, we can identify 4 quadrants:
 
 ![image](https://user-images.githubusercontent.com/99829862/178126052-384006d4-b2fc-4cad-9aad-dd1037709185.png)
 
-* Q1: prediciton = "bad" starting score, result = "good" starting score (false negative)
-* Q2: prediciton = "good" starting score, result = "good" starting score (true positive)
-* Q3: prediciton = "bad" starting score, result = "bad" starting score (true negative)
-* Q4:  prediciton = "good" starting score, result = "bad" starting score (false positive)
+* Q1: prediction = "bad" starting score, result = "good" starting score (false negative)
+* Q2: prediction = "good" starting score, result = "good" starting score (true positive)
+* Q3: prediction = "bad" starting score, result = "bad" starting score (true negative)
+* Q4:  prediction = "good" starting score, result = "bad" starting score (false positive)
 
 This is starting to look like a classification problem. But before we build another model, lets convert our predicted scores to these binary good_score/bad_score categories, and evaluate.
 
