@@ -67,7 +67,7 @@ Each week the fantasy team owners choose which players to start, and which playe
 
 As you can see from the above table, fantasy team owners are missing out, on average 24.3 points. That is more than enough to change the outcome of a matchup.
 
-To see a team by team breakdown, check out my Tableau Dashboard [here](https://10az.online.tableau.com/#/site/brockrickersdashboards/collections/6dc1e817-9337-4675-91c2-98f7c7a30ed3?:origin=card_share_link)
+To see a team by team breakdown, check out my Tableau Dashboard [here](https://10az.online.tableau.com/#/site/brockrickersdashboards/collections/6dc1e817-9337-4675-91c2-98f7c7a30ed3?:origin=card_share_link) (Tableau online account required).
 
 Player Score Regression Modelling
 ---
