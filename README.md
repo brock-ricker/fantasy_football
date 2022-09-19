@@ -127,12 +127,34 @@ Model Metrics:
 
 While the accuracy is just OK, at 64%. The most notable metric is the recall for the "bad_score" outcome. The model achieved 80%, this means that this model can tell you who NOT to start with 80% accuracy.
 
-The next step is to build a new model, treating it as a classification problem from the beginning and see if we can improve our results.
 
-Player Score Classification Modelling
+Player and Draft Pick Evaluation
 ---
 
-Coming Soon
+**Value?**
+
+A difficult question to answer in fantasy football is: "How valuable is a certain player?". It is not as simple as looking at a player's raw points scored. As we saw above, a QB will generally score higher than an RB but that does not make them more valuable, since all QBs score more points, and you are limited on the number of them you can start. Real value comes from a player's score compared to the scores of players who play the same position. This will be our first metric for evaluating a player:
+
+![image](https://user-images.githubusercontent.com/99829862/190942449-70c17ccc-e019-4d89-a1c2-c629f91ddfd1.png)
+
+Lets return to those earlier position score histograms, but add an additional marker for 25th percentile. Using these histograms, we can bin scores into 4 categories:
+* Elite start: 90th percentile
+* Good start: 50th percentile
+* Bad start: 25th percentile
+* Trash start: <25th percentile
+
+![image](https://user-images.githubusercontent.com/99829862/190940456-c4522c86-89b0-4d65-851c-c388d9237e68.png)
+
+Now we have two metrics for evaluating a player:
+
+* points above median
+* start types
+
+
+
+
+
+
 
 
 
