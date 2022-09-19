@@ -155,7 +155,7 @@ Now we have two metrics for evaluating a player:
 
 Using these two metrics, we can get a clear picture of player value. As part of the "Draft_Pick_and_Player_Evaluator" notebook in my repository, I wrote a function that takes a player, and reports both of these metrics. Here are some example outputs:
 
-![image](https://user-images.githubusercontent.com/99829862/190949298-e645af42-d64d-43ff-821b-e77c05c29d66.png)
+![image](https://user-images.githubusercontent.com/99829862/190951755-381385b3-918e-4f15-8900-c7e1f6bb6a0a.png)
 
 Based on these metrics, I think you could make an argument for either Josh Allen or Saquon Barkley as the most valuable fantasy asset. When he plays, Saquon is more likely to get a score above the player median, however, he has a high % of DNP (did not plays). This injury history certainly hurts his value.
 
