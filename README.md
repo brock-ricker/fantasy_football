@@ -131,7 +131,7 @@ While the accuracy is just OK, at 64%. The most notable metric is the recall for
 Player and Draft Pick Evaluation
 ---
 
-**Value?**
+**Player Value?**
 
 A difficult question to answer in fantasy football is: "How valuable is a certain player?". It is not as simple as looking at a player's raw points scored. As we saw above, a QB will generally score higher than an RB but that does not make them more valuable, since all QBs score more points, and you are limited on the number of them you can start. Real value comes from a player's score compared to the scores of players who play the same position. This will be our first metric for evaluating a player:
 
@@ -151,10 +151,27 @@ Now we have two metrics for evaluating a player:
 * start types
 
 
+**Player Evaluator**
 
+Using these two metrics, we can get a clear picture of player value. As part of the "Draft_Pick_and_Player_Evaluator" notebook in my repository, I wrote a function that takes a player, and reports both of these metrics. Here are some example outputs:
 
+![image](https://user-images.githubusercontent.com/99829862/190949298-e645af42-d64d-43ff-821b-e77c05c29d66.png)
 
+Based on these metrics, I think you could make an argument for either Josh Allen or Saquon Barkley as the most valuable fantasy asset. When he plays, Saquon is more likely to get a score above the player median, however, he has a high % of DNP (did not plays). This injury history certainly hurts his value.
 
+**Draft Pick Value**
 
+In dynasty leagues, a team's roster is the kept from year to year. The only way to add players to your team is through trades with a different team, drafting rookie players, or signing un-drafted players. Often times, trades will involve players on one side of the deal, and draft picks on the other. But how can you evaluate a real player vs. one who doesn't play in the NFL yet?
+
+In order to do this, I looked at all players drafted as rookies in our league and found their yearly average points above median:
+![image](https://user-images.githubusercontent.com/99829862/190951113-37b30277-9f7d-44b0-a35b-220f726f2fa1.png)
+
+This shows a clear negative trend, as we would expect, high (later) picks have a lower expected value.
+
+The next logical step is to create the same evaluator but for draft picks. Here are some example outputs:
+
+![image](https://user-images.githubusercontent.com/99829862/190949063-009ee862-5608-4672-8755-2b7bff4e0dc9.png)
+
+In the future, I plan on creating an online interactive evaluator that can be used to compare players vs. players or players vs. draft picks.
 
 
