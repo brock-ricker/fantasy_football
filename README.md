@@ -172,6 +172,8 @@ The next logical step is to create the same evaluator but for draft picks. Here 
 
 ![image](https://user-images.githubusercontent.com/99829862/190949063-009ee862-5608-4672-8755-2b7bff4e0dc9.png)
 
+You can clearly see decreasing value with later picks.
+
 In the future, I plan on creating an online interactive evaluator that can be used to compare players vs. players or players vs. draft picks.
 
 
