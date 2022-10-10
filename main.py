@@ -25,11 +25,6 @@ host = os.getenv("PGHOST")
 port = os.getenv("PGPORT")
 db_name = os.getenv("PGDATABASE")
 
-print("user",user)
-print("pw",password)
-print("host",host)
-print("port",port)
-print("db",db_name)
 
 # create sqlite engine for fantasy_league db
 engine = create_engine(f'postgresql://{user}:{password}@{host}:{port}/{db_name}', echo=True)
