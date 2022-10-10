@@ -19,13 +19,20 @@ app = Flask(__name__)
 
 #loading db credentials from .env file
 load_dotenv()
-user = os.getenv('USER')
-password = os.getenv('PASSWORD')
-host = os.getenv("HOST")
-db_name = os.getenv("DB_NAME")
+user = os.getenv('PGUSER')
+password = os.getenv('PGPASSWORD')
+host = os.getenv("PGHOST")
+port = os.getenv("PGPORT")
+db_name = os.getenv("PGDATABASE")
+
+print("user",user)
+print("pw",password)
+print("host",host)
+print("port",port)
+print("db",db_name)
 
 # create sqlite engine for fantasy_league db
-engine = create_engine(f'postgresql://{user}:{password}@{host}/{db_name}', echo=True)
+engine = create_engine(f'postgresql://{user}:{password}@{host}:{port}/{db_name}', echo=True)
 #create connection to the engine
 conn=engine.connect()
 
