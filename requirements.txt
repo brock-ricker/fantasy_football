@@ -8,7 +8,7 @@ entrypoints==0.4
 executing==1.1.1
 Flask==2.2.2
 greenlet==1.1.3
-importlib-==4.12.0
+importlib-metadata==4.12.0
 ipykernel==6.16.0
 ipython==8.5.0
 itsdangerous==2.1.2
