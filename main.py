@@ -11,11 +11,13 @@ import numpy as np
 import math
 import json
 import os
-from sqlalchemy import create_engine, inspect
+from sqlalchemy import create_engine
 from dotenv import load_dotenv
-from flask import Flask, make_response, request, redirect, url_for, abort, session, jsonify
+from flask import Flask
+from flask_cors import CORS
 
 app = Flask(__name__)
+CORS(app)
 
 #loading db credentials from .env file
 load_dotenv()
