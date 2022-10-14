@@ -52,7 +52,7 @@ def start_cleaner(starts_df):
         total_starts = starts["count"].sum()
 
         #calculating start type %
-        starts["%"] = (starts["count"]/total_starts).round(2)*100
+        starts["percent"] = (starts["count"]/total_starts).round(2)*100
 
         #Sorting by start type
         starts["start_type"] = starts["start_type"].astype(start_type_data)
