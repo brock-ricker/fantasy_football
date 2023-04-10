@@ -173,6 +173,6 @@ The next logical step is to create the same evaluator but for draft picks. Here 
 
 You can clearly see decreasing value with later picks.
 
-Using the data from my league and logic described above, I have created an interactive web app version of the evaluator [here](https://fall-is-coming.vercel.app/compare)
+
 
 
